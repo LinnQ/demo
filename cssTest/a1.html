@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .a1 {
+            background: grey;
+            width: 100px;
+            height: 100px;
+        }
+        /*设定本例中菜单的大小和位置*/
+
+        /* nav {
+            margin: 50px;
+            width: 150px;
+        } */
+        /*给菜单加上边框*/
+
+        .list1 ul {
+            border: 1px solid #f00;
+            border-radius: 5px;
+            padding: 5px 10px 3px;
+        }
+        /*去掉项目符号并为链接添加间距*/
+
+        .list1 li {
+
+            list-style-type: none;
+        }
+        /*“非首位子元素”选择符*/
+
+        .list1 li+li a {
+            border-top: 1px solid #f00;
+        }
+        /*为链接添加样式*/
+
+        .list1 a {
+            padding: 3px 10px;
+            display: block;
+            text-decoration: none;
+            font: 20px Exo, helvetica,
+            arial, sans-serif;
+            font-weight: 400;
+            color: #000;
+            background: #ffed53;
+        }
+        /*悬停高亮*/
+
+        .list1 a:hover {
+            color: #069;
+            background: #ffffff;
+        }
+        /*-------------------------  */
+
+        .list2 ul {
+            /*强制 ul 包围浮动的 li 元素*/
+            overflow: hidden;
+        }
+
+        .list2 li {
+            /*让 li 元素水平排列*/
+            float: left;
+            /*去掉项目符号*/
+            list-style-type: none;
+        }
+
+        .list2 a {
+            /*让链接填满 li 元素*/
+            display: block;
+            padding: 0 16px;
+            /*去掉链接的下划线*/
+            /* text-decoration: none; */
+            color: #999;
+        }
+
+        .list2 li+li a {
+            border-left: 1px solid #aaa;
+        }
+
+        .list2 a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">
+
+    </div>
+
+    <nav class="list1">
+        <ul>
+            <li><a href="#">Alternative</a></li>
+            <li><a href="#">Country</a></li>
+            <li><a href="#">Jazz</a></li>
+            <li><a href="#">Rock</a></li>
+        </ul>
+    </nav>
+
+
+    <nav class="list2">
+        <ul>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Pants</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
